@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<title>mon projet du mois</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		
+</head>
+<body>
+<div class="container">
+	<h1>bien-être</h1>
+<section>
+  <img src="examens.jpg" style="width: 100%; height: 500px;" onmouseover="papa()" onmouseout="mama()" id="res">
+
+
+</section>
+<h3 >chassez les trouble de sommeil, les stress et perte de mémoire grâce à nos conseils!</h3>
+<article><p>Pour entretenir sa forme, il faut une alimentation équilibrée. <br> Quels sont les repas pour vaincre la fatigue et retrouver le sommeil ? <br> Comment chasser le stress et la déprime avec des menus adaptés ? <br> Le secret de la jeunesse et de la beauté est-il dans l'assiette ? <br> Toutes les réponses pour être bien dans son corps.</p>
+</article>
+<div class="row">
+	<div class="col-lg-6 col-lg-6">
+		<div class="thumbnail">
+		<img src="conseil2.jpg">
+		<p>équilibré les aliments</p>	
+
+		</div>
+
+
+
+</div>
+
+
+<div class="col-lg-6 col-lg-6">
+		<div class="thumbnail">
+		<img src="bien_etre2.jpg">
+			<p>Que l'on fasse simplement attention à sa ligne, à son alimentation ou que l'on souhaite perdre quelques kilos superflus, un effort diététique s'impose. Découvrez notre sélection des plus savoureuses recettes minceur.</p>
+
+		</div>
+
+	</div>
+
+</div>
+<h2>nos conseils</h2>
+<h3>à quoi ça sert la nutrition?</h3>
+<p>La nutrition est la discipline qui étudie les aliments et leur utilisation par l'organisme. <br> C'est un élément clé de la santé. Le point sur une science à l'importance croissante.</p>
+<section>	
+<img name="slide" width="800" height="400" >
+<div><p>Le fer est l'un des minéraux essentiels au bon fonctionnement de l'organisme. Il a notamment un rôle fondamental dans la constitution de l'hémoglobine contenue dans les globules rouges. Sachez éviter les carences.</p></div>
+<div><p>Certains des aliments que vous ingérez au quotidien pourraient vous apporter bien plus si vous changiez votre manière de les consommer. Quelques conseils pour optimiser vos apports nutritionnels.</p></div>
+<p>Un bon repas doit être à la fois varié et équilibré ! Pour ne pas faire d'erreur, Doctissimo vous propose de calculer les calories, glucides, lipides, protéines et alcool que vous consommez lors d'un repas ou sur toute une journée.</p>
+<p>Avec l'arrivée des beaux jours, il faut boire ! Car en dévoilant sa peau au soleil, on s'expose inévitablement à la déshydratation. Or pas question  de s'abîmer l'épiderme et entamer son capital soleil. Votre bouteille d'eau doit être l'allié indispensable de votre crème solaire ! Doctissimo vous aide à remplir votre verre pour anticiper les fortes chaleurs !</p>
+</section>
+
+
+
+</div>
+<style type="text/css">
+	
+h2{
+	text-align: center;
+	color: red;
+}
+h3{
+	color: green;
+}
+p{
+	color:black ;
+	font-size: 20px;
+}
+
+</style>
+
+
+
+
+<script type="text/javascript">
+
+	
+  
+var i = 0;
+var images = [];
+var time =2000;
+images[0] ='panier.jpg';
+images[1] ='pr.jpg';
+images[2] ='16.jpg';
+images[3] ='resi.jpg';
+images[4] ='les.jpg';
+
+function changeImg(){
+  document.slide.src = images[i];
+  if (i < images.length - 1) {
+    i++;
+  }else{
+    i = 0;
+  }
+setTimeout("changeImg()",time);
+
+} 
+window.onload = changeImg;
+
+</script>
+
+
+
+<script type="text/javascript" src="index.js"></script>
+	
+</body>
+</html>
